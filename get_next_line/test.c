@@ -5,10 +5,10 @@
 #include <assert.h>
 
 /* pour compiler la partie obligatoire :
-cc -Wall -Werror -Wextra -fsanitize=address -g test.c get_next_line.c get_next_line_utils.c && ./a.out
+cc -Wall -Werror -Wextra -fsanitize=address -g test.c get_next_line.c get_next_line_utils.c -D BUFFER_SIZE=1 && ./a.out
 
 pour compiler la partie bonus :
-cc -Wall -Werror -Wextra -fsanitize=address -g test.c get_next_line_bonus.c get_next_line_utils_bonus.c && ./a.out
+cc -Wall -Werror -Wextra -fsanitize=address -g test.c get_next_line_bonus.c get_next_line_utils_bonus.c -D BUFFER_SIZE=1 && ./a.out
 */
 
 /* descripteur de fichier invalide. */
