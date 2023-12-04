@@ -17,7 +17,7 @@
 /* si ff est un fichier vide */
 // int main()
 // {
-// 	int fd = open("test/ff", O_RDONLY);
+// 	int fd = open("tests/get_next_line/ff", O_RDONLY);
 // 	char *line = get_next_line(fd);
 // 	assert(fd != -1 && line == NULL);
 // 	close(fd);
@@ -26,7 +26,7 @@
 /* si fff ne contient qu'une seule ligne non vide */
 // int main()
 // {
-// 	int fd = open("test/fff", O_RDONLY);
+// 	int fd = open("tests/get_next_line/fff", O_RDONLY);
 // 	char *line = get_next_line(fd);
 // 	printf("<%s>", line);
 // 	free(line);
@@ -39,7 +39,7 @@
 /* pour f quelconque */
 // int main()
 // {
-// 	int fd = open("test/f", O_RDONLY);
+// 	int fd = open("tests/get_next_line/f", O_RDONLY);
 // 	char *line = get_next_line(fd);
 // 	while (line != NULL)
 // 	{
@@ -71,9 +71,9 @@
 // int main()
 // {
 // 	char *line;
-// 	int fd1 = open("f", O_RDONLY);
-// 	int fd2 = open("g", O_RDONLY);
-// 	int fd3 = open("h", O_RDONLY);
+// 	int fd1 = open("tests/get_next_line/f", O_RDONLY);
+// 	int fd2 = open("tests/get_next_line/g", O_RDONLY);
+// 	int fd3 = open("tests/get_next_line/h", O_RDONLY);
 
 // 	line = get_next_line(fd1);
 // 	printf("<%s>", line);
