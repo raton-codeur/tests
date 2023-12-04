@@ -1,15 +1,8 @@
-#include "get_next_line.h"
-#include "get_next_line_bonus.h"
+#include "../get_next_line.h"
+// #include "../get_next_line_bonus.h"
 #include <stdio.h>
 #include <fcntl.h>
 #include <assert.h>
-
-/* pour compiler la partie obligatoire :
-cc -Wall -Werror -Wextra -fsanitize=address -g test.c get_next_line.c get_next_line_utils.c -D BUFFER_SIZE=1 && ./a.out
-
-pour compiler la partie bonus :
-cc -Wall -Werror -Wextra -fsanitize=address -g test.c get_next_line_bonus.c get_next_line_utils_bonus.c -D BUFFER_SIZE=1 && ./a.out
-*/
 
 /* descripteur de fichier invalide. */
 // int main()
@@ -21,19 +14,19 @@ cc -Wall -Werror -Wextra -fsanitize=address -g test.c get_next_line_bonus.c get_
 // 	assert(line == NULL);
 // }
 
-/* si f est un fichier vide */
+/* si ff est un fichier vide */
 // int main()
 // {
-// 	int fd = open("f", O_RDONLY);
+// 	int fd = open("test/ff", O_RDONLY);
 // 	char *line = get_next_line(fd);
-// 	assert(line == NULL);
+// 	assert(fd != -1 && line == NULL);
 // 	close(fd);
 // }
 
-/* si f ne contient qu'une seule ligne non vide */
+/* si fff ne contient qu'une seule ligne non vide */
 // int main()
 // {
-// 	int fd = open("f", O_RDONLY);
+// 	int fd = open("test/fff", O_RDONLY);
 // 	char *line = get_next_line(fd);
 // 	printf("<%s>", line);
 // 	free(line);
@@ -46,7 +39,7 @@ cc -Wall -Werror -Wextra -fsanitize=address -g test.c get_next_line_bonus.c get_
 /* pour f quelconque */
 // int main()
 // {
-// 	int fd = open("f", O_RDONLY);
+// 	int fd = open("test/f", O_RDONLY);
 // 	char *line = get_next_line(fd);
 // 	while (line != NULL)
 // 	{
