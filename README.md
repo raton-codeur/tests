@@ -37,5 +37,5 @@ make fclean all
 ```
 * compiler avec :
 ```
-cc -Wall -Wextra -Werror -fsanitize=address -g tests/main.c -L. -lftprintf
+cc -Wall -Wextra -Werror -fsanitize=address -g tests/ft_printf/main.c -L. -lftprintf
 ```
