@@ -27,3 +27,15 @@ cc -Wall -Wextra -Werror -fsanitize=address -g get_next_line.c get_next_line_uti
 cc -Wall -Wextra -Werror -fsanitize=address -g *_bonus.c tests/get_next_line/*.c -D BUFFER_SIZE=4
 ```
 (modifier BUFFER_SIZE)
+
+# ft_printf
+
+* placer le dossier `tests` dans le working directory et modifier `ft_printf/main.c` au besoin
+* créer `libftprintf.a` dans le working directory avec :
+```
+make fclean all
+```
+* compiler avec :
+```
+cc -Wall -Wextra -Werror -fsanitize=address -g tests/main.c -L. -lftprintf
+```
