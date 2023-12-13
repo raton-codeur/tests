@@ -240,3 +240,10 @@
 // 	int result = ft_printf("a%wb");
 // 	printf("result : %d\n", result);
 // }
+
+/* indéfini : erreur sur le nombre d'arguments */
+// int main ()
+// {
+// 	ft_printf("<%d>");
+// 	ft_printf("<%d>", 5, 8);
+// }
