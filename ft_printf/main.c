@@ -232,3 +232,11 @@
 // 	int expected = printf("%%");
 // 	assert(result == expected);
 // }
+
+/* indéfini : pourcentage + lettre qui n'est pas une spécification de format */
+// int main ()
+// {
+// 	printf("ft_printf :\n");
+// 	int result = ft_printf("a%wb");
+// 	printf("result : %d\n", result);
+// }
