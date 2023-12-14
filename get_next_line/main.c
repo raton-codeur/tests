@@ -73,55 +73,55 @@
 // int main()
 // {
 // 	char *line;
-// 	int fd1 = open("tests/get_next_line/f", O_RDONLY);
-// 	int fd2 = open("tests/get_next_line/g", O_RDONLY);
-// 	int fd3 = open("tests/get_next_line/h", O_RDONLY);
+// 	int fd_f = open("tests/get_next_line/f", O_RDONLY);
+// 	int fd_g = open("tests/get_next_line/g", O_RDONLY);
+// 	int fd_h = open("tests/get_next_line/h", O_RDONLY);
 
-// 	line = get_next_line(fd1);
-// 	printf("<%s>", line);
+// 	line = get_next_line(fd_f);
+// 	printf("fd_f 1 : <%s>", line);
 // 	free(line);
 
-// 	line = get_next_line(fd2);
-// 	printf("<%s>", line);
+// 	line = get_next_line(fd_g);
+// 	printf("fd_g 1 : <%s>", line);
 // 	free(line);
 
-// 	line = get_next_line(fd1);
-// 	printf("<%s>", line);
+// 	line = get_next_line(fd_f);
+// 	printf("fd_f 2 : <%s>", line);
 // 	free(line);
 
-// 	line = get_next_line(fd3);
-// 	printf("<%s>", line);
+// 	line = get_next_line(fd_h);
+// 	printf("fd_h 1 : <%s>", line);
 // 	free(line);
 
-// 	line = get_next_line(fd2);
-// 	printf("<%s>", line);
+// 	line = get_next_line(fd_g);
+// 	printf("fd_g 2 : <%s>", line);
 // 	free(line);
 
-// 	line = get_next_line(fd3);
-// 	printf("<%s>", line);
+// 	line = get_next_line(fd_h);
+// 	printf("fd_h 2 : <%s>", line);
 // 	free(line);
 
-// 	line = get_next_line(fd1);
-// 	printf("<%s>", line);
+// 	line = get_next_line(fd_f);
+// 	printf("fd_f 3 : <%s>", line);
 // 	free(line);
 
-// 	line = get_next_line(fd2);
-// 	printf("<%s>", line);
+// 	line = get_next_line(fd_g);
+// 	printf("fd_g 3 : <%s>", line);
 // 	free(line);
 
-// 	line = get_next_line(fd1);
-// 	printf("<%s>", line);
+// 	line = get_next_line(fd_h);
+// 	printf("fd_h 3 : <%s>", line);
 // 	free(line);
 
-// 	line = get_next_line(fd3);
-// 	printf("<%s>", line);
+// 	line = get_next_line(fd_h);
+// 	printf("fd_h 4 : <%s>", line);
 // 	free(line);
 
-// 	line = get_next_line(fd2);
-// 	printf("<%s>", line);
+// 	line = get_next_line(fd_g);
+// 	printf("fd_g 4 : <%s>", line);
 // 	free(line);
 
-// 	line = get_next_line(fd3);
-// 	printf("<%s>", line);
+// 	line = get_next_line(fd_h);
+// 	printf("fd_h 5 : <%s>", line);
 // 	free(line);
 // }
